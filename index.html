@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="converter-container">
+            <h1>Unit Converter</h1>
+
+            <div class="conversion-form">
+                <label for="category">Choose a category:</label>
+                <select id="category" onchange="updateUnits()">
+                    <option value="currency">Currency</option>
+                    <option value="distance">Distance</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="volume">Volume</option>
+                    <option value="speed">Speed</option>
+                    <option value="time">Time</option>
+                    <option value="area">Area</option>
+                    <option value="energy">Energy</option>
+                    <option value="power">Power</option>
+                    <option value="pressure">Pressure</option>
+                    <option value="frequency">Frequency</option>
+                    <option value="fuelEconomy">Fuel Economy</option>
+                    <option value="dataStorage">Data Storage</option>
+                    <option value="acceleration">Acceleration</option>
+                    <option value="angle">Angle</option>
+                    <option value="force">Force</option>
+                </select>
+
+                <label for="fromUnit">From:</label>
+                <input type="number" id="fromValue" placeholder="Enter value">
+                <select id="fromUnit"></select>
+
+                <label for="toUnit">To:</label>
+                <input type="number" id="toValue" placeholder="Result" disabled>
+                <select id="toUnit"></select>
+
+                <button onclick="convert()">Convert</button>
+            </div>
+        </div>
+
+        <div id="othercalc">
+            <div id="octitle"><a href="/other-calculator.html" style="text-decoration: none;"><b>Other Calculators</b></a></div>
+            <div id="occontent">
+                <div class="column">
+                    <a href="/age-calculator.html">Age</a>
+                    <a href="/date-calculator.html">Date</a>
+                    <a href="/time-calculator.html">Time</a>
+                    <a href="/hours-calculator.html">Hours</a>
+                    <a href="/gpa-calculator.html">GPA</a>
+                    <a href="/grade-calculator.html">Grade</a>
+                </div>
+                <div class="column">
+                    <a href="/height-calculator.html">Height</a>
+                    <a href="/concrete-calculator.html">Concrete</a>
+                    <a href="/ip-subnet-calculator.html">IP Subnet</a>
+                    <a href="/bra-size-calculator.html">Bra Size</a>
+                    <a href="/password-generator.html">Password Generator</a>
+                    <a href="/dice-roller.html">Dice Roller</a>
+                </div>
+            </div>
+            <div id="ocother">
+                <a href="/financial-calculator.html">Financial</a> |
+                <a href="/fitness-and-health-calculator.html">Fitness and Health</a> |
+                <a href="/math-calculator.html">Math</a> |
+                <a href="/other-calculator.html">Other</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social-icons">
+            <!-- Ionicons for social icons -->
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p>&copy; 2024 <a href="https://github.com/karthikprabhu10" style="text-decoration: solid;-webkit-text-fill-color: #ff6f00;">Karthik Prabhu.</a> All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.7.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
