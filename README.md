@@ -31,7 +31,9 @@ The project consists of the following files:
 
 ## installation
 - Clone the repository
-  ``git clone https://github.com/karthikprabhu10/unit-converter.git``
+  ```bash
+  git clone https://github.com/karthikprabhu10/unit-converter.git
+  ```
 
 ## Usage
 
